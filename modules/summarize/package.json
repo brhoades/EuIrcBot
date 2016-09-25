@@ -1,0 +1,14 @@
+{
+  "name": "sirc-summarize",
+  "version": "0.0.0",
+  "description": "Article summarizer module",
+  "main": "index.js",
+  "dependencies": {
+    "node-tldr": "latest",
+    "unfluff": "latest",
+    "cheerio": "latest",
+    "request": "latest"
+  },
+  "author": "brodes",
+  "license": "MIT"
+}
