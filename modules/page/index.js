@@ -7,7 +7,7 @@ var addresses = {};
 var ses = null;
 
 function getAddresses(channel, cb) {
-  bot.readDataFile(channel + '.json', function(err, res) {
+  bot.readDataFile(channel + '-page.json', function(err, res) {
     if(err) {
       console.log("no data");
       addresses[channel] = {};
@@ -21,7 +21,7 @@ function getAddresses(channel, cb) {
 }
 
 function saveAddresses(channel) {
-  bot.writeDataFile(channel + '.json', JSON.stringify(addresses[channel]), function(err) {
+  bot.writeDataFile(channel + '-page.json', JSON.stringify(addresses[channel]), function(err) {
     if(err)console.log("Error saving addresses for channel " + channel);
   });
 }
